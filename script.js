@@ -30,11 +30,9 @@ function btnDesencriptar(){
 }
 
 function btnCopiar() {
-    navigator.permissions.query({name: "clipboard-write"}).then((result) => {
-        if (result.state === "granted" || result.state === "prompt") {
-          /* write to the clipboard now */
-        }
-      });
-    navigator.clipboard.writeText("resultado").then
-    
+    var contenido = document.querySelector("resultado");
+    contenido.select();
+    document.execCommand("copy")
+    alert("Mensaje copiado")
+
 }
