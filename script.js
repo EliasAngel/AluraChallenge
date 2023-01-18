@@ -15,6 +15,8 @@ function btnEncriptar(){
 
     document.getElementById("resultado").style.background ="none";
     document.getElementById("resultado").innerHTML = txtCifrado;
+    document.getElementById("info").style.display="none";
+    document.getElementById("info2").style.display="none";
 }
 
 function btnDesencriptar(){
@@ -27,12 +29,14 @@ function btnDesencriptar(){
 
     document.getElementById("resultado").style.background ="none";
     document.getElementById("resultado").innerHTML = txtCifrado;
+    document.getElementById("info").style.display="none";
+    document.getElementById("info2").style.display="none";
 }
 
 function btnCopiar() {
     var contenido = document.querySelector("#resultado");
     contenido.select();
-    document.execCommand("copy")
-    alert("Mensaje copiado")
+    document.execCommand("copy");
+    alert("Mensaje copiado");
 
 }

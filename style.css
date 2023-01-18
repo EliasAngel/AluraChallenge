@@ -47,6 +47,17 @@ main{
     outline: none;
 }
 
+p{
+    position: relative;
+    text-align: center;
+    top: 400px;
+    left: 90px;
+    font-size: 24px;
+}
+
+.textoAbajo{
+    font-size: 12px;
+}
 .botones{
     display: flex;
     margin-top: 18px;
