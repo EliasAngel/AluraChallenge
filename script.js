@@ -30,7 +30,7 @@ function btnDesencriptar(){
 }
 
 function btnCopiar() {
-    var contenido = document.querySelector("resultado");
+    var contenido = document.querySelector("#resultado");
     contenido.select();
     document.execCommand("copy")
     alert("Mensaje copiado")
